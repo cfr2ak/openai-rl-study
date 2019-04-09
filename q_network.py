@@ -1,8 +1,6 @@
 import gym
-import random
 import numpy as np
 import tensorflow as tf
-from sympy.functions.special.elliptic_integrals import elliptic_pi
 
 environment = gym.make("FrozenLake-v0")
 
