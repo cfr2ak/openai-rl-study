@@ -83,7 +83,7 @@ with tf.Session() as sess:
         action = sess.run(
             predicted_action_tf,
             feed_dict={inputs: np.identity(environment.observation_space.n)[state:state+1]
-                       })
+        })
         next_state, reward, terminate, _ = environment.step(action[0])
 
         print("=" * 10)
