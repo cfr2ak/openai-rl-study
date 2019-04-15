@@ -30,7 +30,7 @@ while True:
     previous_U = np.copy(U)
 
     for state_index in range(env.observation_space.n):
-        U_value_table = []
+        U_value_table = [] # = Q_{sa}
         for action_index in range(env.action_space.n):
             U_value_for_action = 0
             for p, next_state, reward, _ in env.env.P[state_index][action_index]:
